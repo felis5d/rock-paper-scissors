@@ -16,7 +16,7 @@ function setPlayerCounter() {
 }
 
 function getPlayerCounter() {
-    return parseInt(document.getElementById("computer-counter").innerHTML);
+    return parseInt(document.getElementById("player-counter").innerHTML);
 }
 
 function getComputerChoice() {
@@ -29,12 +29,12 @@ function getComputerChoice() {
 //cc==1 scissors
 
 function rock() {
-    getComputerChoice();
+    let computerChoice = getComputerChoice();
     document.getElementById("player-choice").innerHTML = "Rock";
-    if (getComputerChoice()<1) {
+    if (computerChoice<1) {
         document.getElementById("result").innerHTML = "It's a tie!";
         document.getElementById("computer-choice").innerHTML = "Rock";
-    } else if (getComputerChoice()>1) {
+    } else if (computerChoice>1) {
         document.getElementById("result").innerHTML = "Computer wins!";
         document.getElementById("computer-choice").innerHTML = "Paper";
         document.getElementById("computer-counter").innerHTML = getComputerCounter()+1;
@@ -46,13 +46,13 @@ function rock() {
 }
 
 function paper() {
-    getComputerChoice();
+    let computerChoice = getComputerChoice();
     document.getElementById("player-choice").innerHTML = "Paper";
-    if (getComputerChoice()<1) {
+    if (computerChoice<1) {
         document.getElementById("result").innerHTML = "You win!";
         document.getElementById("computer-choice").innerHTML = "Rock";
         document.getElementById("player-counter").innerHTML = getPlayerCounter()+1;
-    } else if (getComputerChoice()>1) {
+    } else if (computerChoice>1) {
         document.getElementById("result").innerHTML = "It's a tie!";
         document.getElementById("computer-choice").innerHTML = "Paper";
     } else {
@@ -63,13 +63,13 @@ function paper() {
 }
 
 function scissors() {
-    getComputerChoice();
+    let computerChoice = getComputerChoice();
     document.getElementById("player-choice").innerHTML = "Scissors";
-    if (getComputerChoice()<1) {
+    if (computerChoice<1) {
         document.getElementById("result").innerHTML = "Computer wins!";
         document.getElementById("computer-choice").innerHTML = "Rock";
         document.getElementById("computer-counter").innerHTML = getComputerCounter()+1;
-    } else if (getComputerChoice()>1) {
+    } else if (computerChoice>1) {
         document.getElementById("result").innerHTML = "You win!";
         document.getElementById("computer-choice").innerHTML = "Paper";
         document.getElementById("player-counter").innerHTML = getPlayerCounter()+1;
