@@ -1,0 +1,114 @@
+html {
+    color: lime;
+    font-weight: bold;
+    font-size: 2em;
+    font-family: 'Tektur', monospace;
+    text-align: center;
+}
+
+body {
+   background-color: black;
+   height: 100vh;
+   overflow: hidden;
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+}
+
+button {
+    background-color: transparent;
+    color: lime;
+    font-weight: bold;
+    font-size: 2em;
+    font-family: Tektur;
+    border: 3px solid lime;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.counter {
+    height: 1.5em;
+    width: 1.5em;
+    color: lime;
+    font-weight: bold;
+    font-size: 1em;
+    font-family: 'Tektur', monospace;
+    border: 3px solid lime;
+    margin: 0.75em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 1.5em 0 2em;
+    width: 97vw;
+    overflow: hidden;
+}
+
+.counter-wrapper2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.counter-text {
+    font-size: 0.5em;
+}
+
+.result-box {
+    height: 2em;
+    margin: 1em auto 0.5em;
+}
+
+.text {
+    margin: 0.5em auto;
+}
+
+.player-choice {
+    height: 2em;
+    width: 5.5em;
+    border: 3px solid lime;
+    margin: 0.5em auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.computer-choice {
+    height: 2em;
+    width: 5.5em;
+    border: 3px solid lime;
+    margin: 1em auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+@font-face {
+    font-family: Tektur; src: url('tektur.ttf');
+}

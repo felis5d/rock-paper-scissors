@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Rock, Paper, Scissors</title>
+<link rel="icon" href="img/icon.png" type="image/icon">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>
+
+</head>
+
+<body onload=setCounters()>
+
+<div class="counter-wrapper">
+    <div class="counter-wrapper2">
+        <div>Computer:</div>
+        <div class="counter" id="computer-counter"></div>
+    </div>
+    <div class="counter-wrapper2">
+        <div>You:</div>
+        <div class="counter" id="player-counter"></div>
+    </div>
+
+</div>
+
+<div class="wrapper">
+    
+    <div class="wrapper2">
+
+        <button class="btn" onclick=rock()><img src="img/rock.png"></button>
+        <button class="btn" onclick=paper()><img src="img/paper.png"></button>
+        <button class="btn" onclick=scissors()><img src="img/scissors.png"></button>
+
+        <div class="text">
+            Player choice:
+        </div>
+        <div class ="player-choice" id="player-choice">
+        </div>
+
+        <div class="result-box" id="result">
+        </div>
+
+        <div class="text">
+            Computer choice:
+        </div>
+        <div>
+        <div class="computer-choice" id="computer-choice">
+        </div>
+        </div>
+
+        <button><img src="img/rock.png"></button>
+        <button><img src="img/paper.png"></button>
+        <button><img src="img/scissors.png"></button>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
